@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Banca Atómico</title>
+</head>
+<body>
+    <input type="hidden" value="0" id="uno">
+    <div class="contain">
+           
+            <h1>Bienvenido a tu Cajero</h1>
+            <h3>¿Que desearía hacer hoy?</h3>
+        <div class="consu">             
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">Tu saldo es:</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Presiona el boton para consulta o actualizar" value="" id="saldo" aria-describedby="basic-addon1" readonly>
+                <button type="button" class="btn btn-primary" id="consulta">Consultar</button>
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">Ingresa monto: $</span>
+                </div>
+                <input type="number" class="form-control" id="monto" aria-describedby="basic-addon1">
+                <button type="button" class="btn btn-primary" id="deposito">Depositar</button>
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">Nuevo saldo:</span>
+                  </div>
+                  <input type="text" class="form-control" value="" id="currentSaldo" aria-describedby="basic-addon1" readonly>
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">Ingresa retiro: $</span>
+                </div>
+                <input type="number" class="form-control" id="montoRetirar" aria-describedby="basic-addon1">
+                <button type="button" class="btn btn-primary" id="retiro">Retirar</button>
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">Nuevo saldo:</span>
+                  </div>
+                  <input type="text" class="form-control" value="" id="currentSaldo2" aria-describedby="basic-addon1" readonly>
+            </div>
+        </div>   
+
+            
+            
+    </div>
+<script src="operaciones.js"></script>
+</body>
+</html>

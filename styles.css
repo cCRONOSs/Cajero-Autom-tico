@@ -1,0 +1,35 @@
+body{
+    background-color: #18a49d;
+}
+
+
+.formulario{
+        display: flex;
+}
+.pelicula{
+    width: 70%;
+    margin-top: 8%;
+}
+.pelicula img{
+    border-radius: 10px;
+}
+
+.formulario form{
+    padding: 10%;
+    margin-top: 5%;
+    width: 70%;
+    color: white;
+}
+
+.botones{
+    width: 25%; 
+    justify-content: space-between;
+}
+
+.contain{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
